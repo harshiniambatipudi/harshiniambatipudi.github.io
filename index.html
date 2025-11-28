@@ -1,68 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Harshini | Portfolio</title>
+  <meta charset="UTF-8" />
+  <title>Harshini Ambatipudi | Student Developer & Research Enthusiast</title>
+
+  <!-- Basic SEO -->
+  <meta name="description" content="Harshini Ambatipudi is a high school senior passionate about coding, research, and building meaningful projects using Python, C++, JavaScript, React, Angular, and machine learning." />
+  <meta name="keywords" content="Harshini Ambatipudi, Harshini, student developer, high school coder, Python, C++, JavaScript, React, Angular, machine learning, portfolio" />
+  <meta name="author" content="Harshini Ambatipudi" />
+
+  <!-- Mobile-friendly -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Open Graph (for sharing on Discord/LinkedIn/etc.) -->
+  <meta property="og:title" content="Harshini Ambatipudi | Student Developer" />
+  <meta property="og:description" content="Portfolio of Harshini Ambatipudi – high school senior focused on coding, research, and human-centered projects." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://harshiniambatipudi.github.io/" />
+
+  <!-- Fonts + basic styling -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
+    :root {
+      --accent: #2563eb;
+      --bg: #fafafa;
+      --card-bg: #ffffff;
+      --text-main: #111827;
+      --text-sub: #4b5563;
+      --border: #e5e7eb;
+    }
+
+    * { box-sizing: border-box; }
+
     body {
-      font-family: 'Poppins', sans-serif;
       margin: 0;
-      padding: 40px;
-      background: #fafafa;
-      color: #333;
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
     }
-    h1 {
-      font-size: 42px;
-      font-weight: 600;
-      color: #1a1a1a;
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
     }
-    .subtitle {
-      font-size: 20px;
+
+    header {
       margin-bottom: 40px;
-      color: #555;
     }
-    .section-title {
-      font-size: 26px;
-      margin-top: 60px;
-      margin-bottom: 10px;
+
+    .headline {
+      font-size: 2.5rem;
       font-weight: 600;
-      color: #222;
+      margin-bottom: 8px;
     }
+
+    .subtitle {
+      font-size: 1.05rem;
+      color: var(--text-sub);
+      max-width: 650px;
+    }
+
+    nav {
+      margin-top: 16px;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--accent);
+      font-size: 0.95rem;
+    }
+
+    section {
+      margin-top: 40px;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 4px;
+    }
+
     .card {
-      background: white;
-      padding: 18px;
+      background: var(--card-bg);
       border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-      margin-bottom: 20px;
+      padding: 18px 20px;
+      box-shadow: 0 2px 10px rgba(15, 23, 42, 0.06);
+      margin-bottom: 18px;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .pill {
+      font-size: 0.85rem;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #e0ebff;
+      color: #1f2937;
+    }
+
+    a.btn {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    a.btn:hover {
+      background: var(--accent);
+      color: white;
+    }
+
+    footer {
+      margin-top: 48px;
+      font-size: 0.85rem;
+      color: var(--text-sub);
+    }
+
+    @media (max-width: 640px) {
+      .headline { font-size: 2rem; }
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <header>
+      <h1 class="headline">Hello, I'm Harshini 👋</h1>
+      <p class="subtitle">
+        I’m a high school senior passionate about coding, research, and building human-centered projects.
+        I enjoy working with Python, C++, JavaScript, React, Angular, and machine learning.
+      </p>
+      <nav>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
 
-  <h1>Hello, I'm Harshini 👋</h1>
-  <p class="subtitle">High school senior passionate about coding, research, and building meaningful projects.</p>
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="card">
+        <strong>Languages</strong>
+        <div class="pill-row">
+          <span class="pill">C</span>
+          <span class="pill">C++</span>
+          <span class="pill">Python</span>
+          <span class="pill">Java</span>
+          <span class="pill">JavaScript</span>
+        </div>
+      </div>
 
-  <h2 class="section-title">Skills</h2>
-  <div class="card">
-    <p><strong>Languages:</strong> C, C++, Python, Java, JavaScript</p>
-    <p><strong>Frameworks:</strong> React, Angular</p>
-    <p><strong>Tools:</strong> Linux, HTML, CSS, Machine Learning</p>
+      <div class="card">
+        <strong>Frameworks</strong>
+        <div class="pill-row">
+          <span class="pill">React</span>
+          <span class="pill">Angular</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <strong>Tools & Technologies</strong>
+        <div class="pill-row">
+          <span class="pill">Machine Learning</span>
+          <span class="pill">Linux</span>
+          <span class="pill">HTML</span>
+          <span class="pill">CSS</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="card">
+        <strong>Scientific File Format Data Analyzer</strong>
+        <p>
+          A Python-based tool for exploring and analyzing dataset structures across multiple scientific file formats.
+          This project helped me practice data handling, automation, and clear documentation.
+        </p>
+        <a class="btn" href="https://github.com/harshiniambatipudi/scientific-file-format-data-analyzer" target="_blank" rel="noopener">
+          View on GitHub
+        </a>
+      </div>
+
+      <!-- Add more project cards here as you build them -->
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">About</h2>
+      <div class="card">
+        <p>
+          I enjoy turning ideas into real projects and using code to solve problems.
+          I’m especially interested in research, data analysis, and human-centered design.
+          I’m open to internships and collaboration opportunities where I can learn, contribute, and grow.
+        </p>
+        <p>
+          You can also find my work on GitHub:
+          <a href="https://github.com/harshiniambatipudi" target="_blank" rel="noopener">
+            @harshiniambatipudi
+          </a>.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Harshini Ambatipudi. All rights reserved.
+    </footer>
   </div>
 
-  <h2 class="section-title">Projects</h2>
-  <div class="card">
-    <strong>Scientific File Format Data Analyzer</strong>
-    <p>A Python-based tool for analyzing dataset structures across multiple scientific file formats.</p>
-  </div>
-
-  <h2 class="section-title">Links</h2>
-  <div class="card">
-    <p>GitHub: <strong>harshiniambatipudi</strong></p>
-  </div>
-
+  <script>
+    // keep the year up to date
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <img src="https://avatars.githubusercontent.com/u/171386151?v=4" class="profile-pic" alt="Harshini profile picture">
   <title>Sreeharshini Ambatipudi | Student Developer & Research Enthusiast</title>
 
   <!-- Basic SEO -->
@@ -19,7 +18,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://harshiniambatipudi.github.io/" />
 
-  <!-- Fonts + basic styling -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -34,7 +33,9 @@
       --border: #e5e7eb;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
@@ -134,33 +135,59 @@
       color: var(--text-sub);
     }
 
-    @media (max-width: 640px) {
-      .headline { font-size: 2rem; }
-    }
     .profile-pic {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #e5e7eb;
-  margin-bottom: 20px;
-}
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #e5e7eb;
+    }
 
+    .header-flex {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .header-text {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    @media (max-width: 640px) {
+      .headline {
+        font-size: 2rem;
+      }
+      .header-flex {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <header>
-      <h1 class="headline">Hello, I'm Harshini 👋</h1>
-      <p class="subtitle">
-        I’m a high school senior passionate about coding, research, and building human-centered projects.
-        I enjoy working with Python, C++, JavaScript, React, Angular, and machine learning.
-      </p>
-      <nav>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-      </nav>
+    <header class="header-flex">
+      <img
+        src="https://avatars.githubusercontent.com/u/171386151?v=4"
+        class="profile-pic"
+        alt="Harshini profile picture"
+      />
+
+      <div class="header-text">
+        <h1 class="headline">Hello, I'm Sreeharshini 👋</h1>
+        <p class="subtitle">
+          I’m a high school senior passionate about coding, research, and building human-centered projects.
+          I enjoy working with Python, C++, JavaScript, React, Angular, and machine learning.
+        </p>
+
+        <nav>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+        </nav>
+      </div>
     </header>
 
     <section id="skills">
@@ -185,7 +212,7 @@
       </div>
 
       <div class="card">
-        <strong>Tools & Technologies</strong>
+        <strong>Tools &amp; Technologies</strong>
         <div class="pill-row">
           <span class="pill">Machine Learning</span>
           <span class="pill">Linux</span>
